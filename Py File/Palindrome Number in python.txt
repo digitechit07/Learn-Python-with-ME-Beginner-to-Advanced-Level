@@ -1,0 +1,23 @@
+Code to see if a number is a Palindrome Number:
+
+
+n1=int(input("Enter a Number: "))
+n=str(n1)
+l1=list(n)
+l2=l1[::-1]
+if l1==l2:
+    print(n1,"is a palindrome number.")
+else:
+    print(n1,"is not a palindrome number.")
+    
+
+Function to check if a number is a palindrome number:
+def palin(n):
+    """This function checks if a given number is a palindrome number or not."""
+    n1 = str(n)
+    l1 = list(n1)
+    l2 = l1[::-1]
+    if l1 == l2:
+        return "a Palindrome Number"
+    else:
+        return "Not a Palindrome Number"

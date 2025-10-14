@@ -1,0 +1,8 @@
+#Left shift a string having n characters such that on left shift left most character will move to the right most.
+#String to array conversion is not allowed
+
+import re
+string = "abcdefghijk"
+ls = re.match('^\w', string)
+string = re.sub(ls.group(),'',string)
+string += ls.group()
